@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./Images/logo.jpg" class="rounded-circle">
+    <title>TraveBai</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body onload="preLoad()">
+    <div class="row">
+      <div class="col-12">
+          <div id="loading"></div>
+      </div>
+    </div>
+    
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-3">
+        <div class="container-fluid" style="font-size: 20px;">
+            <img src="./Images/logo.jpg" alt="logo" class="img-fluid rounded-circle" width="30">
+          <a class="navbar-brand ms-1" href="#" style="font-size: 25px;">TraveBai</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-2">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./places.html">Places</a>
+              </li>
+
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./hotel.html">Hotels</a>
+              </li>
+              
+              <li class="nav-item me-2">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <div class="container-fluid">
+
+      <!-- hero section  -->
+      <div class="row justify-content-center hero5 text-center text-white" id="heroo">
+        <span><h1 data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out" style="font-size: 80px; margin-top: 240px;" id="fh2">Contact Us</h1>
+        <p data-aos="flip-up" data-aos-duration="2000" data-aos-easing="ease-in-out" style="font-size: 30px;">Feel free to Contact Us.</p></span>
+      </div>
+      <!-- hero section end  -->
+
+      <hr class="p-0 my-1">
+
+        <!-- up button  -->
+        <a href="#heroo"><span class="text-success" id="myBtn" style="font-size: 50px; position: fixed; bottom: 20px; right: 30px; z-index: 99;"><i class="bi bi-arrow-up-circle-fill"></i></span></a>
+        <!-- up button ends  -->
+
+        <div class="row justify-content-center page">
+          <div class="row justify-content-evenly py-4">
+            <div class="col-md-4">
+              <img src="./Images/contactus.png" class="img-fluid mt-5" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+            </div>
+            <div class="col-md-5 text-white">
+              <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" class="text-center mt-4">Feel <span style="color: yellow;">free</span> to <span style="color: yellow;">Contact</span> Us.</h1>
+              <form data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label" style="font-size: 20px;">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label" style="font-size: 20px;">Email <span class="me">address</span></label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="query" style="height:100px"></textarea>
+                    <label for="floatingTextarea2" class="text-dark">Write your <span class="me">Message</span> Here</label>
+                </div>
+                <center><button onclick="check()" type="button" class="btn btn-success text-white rounded-pill pt-2 px-5 mb-4" style="font-size:20px;">Submit</button></center>
+
+                <center><a href="mailto:haamidraza03@gmail.com" target="_blank"><i class="bi bi-envelope text-white"style="font-size: 30px;" title="E-Mail" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out"></i></a>
+                <a href="https://wa.me/9422671453" target="_blank"><i class="bi bi-whatsapp ms-4 text-white" style="font-size: 30px;" title="WhatsApp" data-aos="zoom-in" data-aos-duration="1300" data-aos-easing="ease-in-out"></i></a>
+                <a href="#"><i class="bi bi-facebook ms-4 text-white" style="font-size: 30px;" title="Facebook" data-aos="zoom-in" data-aos-duration="1600" data-aos-easing="ease-in-out"></i></a>
+                <a href="https://www.instagram.com/the_hrk_03/" target="_blank"><i class="bi bi-instagram ms-4 text-white" style="font-size: 30px;" title="Instagram" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out"></i></a>
+                <a href="#"><i class="bi bi-twitter ms-4 text-white" style="font-size: 30px;" title="Twitter" data-aos="zoom-in" data-aos-duration="2500" data-aos-easing="ease-in-out"></i></a></center>
+            </form>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="row justify-content-center text-center bcg py-3 bg-dark text-white">
+            <footer class="footer">
+                <div>
+                    Copyright &#169; TraveBai 2023. All Right Reserved.
+                </div>
+                <div>
+                  Made with <i class="bi bi-heart-fill"></i> by Haamid Raza Kazi.
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./load.js"></script>
+    <script src="contact.js"></script>
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+  
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+          } else {
+            nav.classList.remove('bg-dark', 'shadow');
+          }
+        });
+      </script>
+
+      <script type="text/javascript">
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+      </script>
+  </body>
+</html>

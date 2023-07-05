@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./Images/logo.jpg" class="rounded-circle">
+    <title>TraveBai</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body onload="preLoad()">
+    <div class="row">
+      <div class="col-12">
+          <div id="loading"></div>
+      </div>
+    </div>
+    
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-3">
+        <div class="container-fluid" style="font-size: 20px;">
+            <img src="./Images/logo.jpg" alt="logo" class="img-fluid rounded-circle" width="30">
+          <a class="navbar-brand ms-1" href="#" style="font-size: 25px;">TraveBai</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-2">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./places.html">Places</a>
+              </li>
+
+              <li class="nav-item me-2">
+                <a class="nav-link active" href="#">Hotels</a>
+              </li>
+              
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <div class="container-fluid">
+
+      <!-- hero section  -->
+      <div class="row justify-content-center hero4 text-center text-white" id="heroo">
+        <span><h1 data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out" style="font-size: 80px; margin-top: 240px;" id="fh2">Hotels</h1>
+        <p data-aos="flip-up" data-aos-duration="2000" data-aos-easing="ease-in-out" style="font-size: 30px;">Find Hotels to Rest in.</p></span>
+      </div>
+      <!-- hero section end  -->
+
+      <hr class="p-0 my-1">
+
+        <!-- up button  -->
+        <a href="#heroo"><span class="text-success" id="myBtn" style="font-size: 50px; position: fixed; bottom: 20px; right: 30px; z-index: 99;"><i class="bi bi-arrow-up-circle-fill"></i></span></a>
+        <!-- up button ends  -->
+
+        <div class="row page2 justify-content-center py-3">
+          
+          <div class="row justify-content-evenly">
+            <div class="col-md-3 rounded-3 px-2 py-3 shadow mt-3" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="./Images/taj palace hotel.jpg" title="The Taj Mahal Palace" class="img-fluid rounded-3">
+              <h2 class="mt-2 mb-1 text-center">The Taj Mahal Palace</h2>
+              <center><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201709071828297454&_uCurrency=INR&checkin=07092023&checkout=07102023&city=CTBOM&country=IN&lat=18.92173&lng=72.83303&locusId=CTBOM&locusType=city&rank=1&reference=hotel&roomStayQualifier=1e0e&searchText=Mumbai&type=city&viewType=LUXE&mtkeys=defaultMtkey" target="_blank"><button class="text-center btn btn-success rounded-pill mt-1 px-3 py-1 shadow">Check Details</button></a></center>
+            </div>
+            <div class="col-md-3 rounded-3 px-2 py-3 shadow mt-3" style="height: fit-content;" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="./Images/leela hotel.jpg" title="The Leela" class="img-fluid rounded-3">
+              <h2 class="mt-2 mb-1 text-center">The Leela</h2>
+              <center><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201007121229563872&_uCurrency=INR&checkin=07092023&checkout=07102023&city=CTBOM&country=IN&lat=19.10942&lng=72.87569&locusId=CTBOM&locusType=city&rank=18&reference=hotel&roomStayQualifier=1e0e&searchText=Mumbai&sort=reviewRating-desc&topHtlId=201507241424266753&type=city&viewType=LUXE&mtkeys=defaultMtkey" target="_blank"><button class="text-center btn btn-success rounded-pill mt-1 px-3 py-1 shadow">Check Details</button></a></center>
+            </div>
+            <div class="col-md-3 rounded-3 px-2 py-3 shadow mt-3" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="./Images/intercontinental hotel.jpg" title="Intercontinental Marine Drive" class="img-fluid rounded-3">
+              <h2 class="mt-2 mb-1 text-center">Intercontinental Marine Drive</h2>
+              <center><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200908131144551680&_uCurrency=INR&checkin=07092023&checkout=07102023&city=CTBOM&country=IN&lat=18.93495&lng=72.8241&locusId=CTBOM&locusType=city&rank=5&reference=hotel&roomStayQualifier=1e0e&searchText=Mumbai&type=city&viewType=LUXE&mtkeys=defaultMtkey" target="_blank"><button class="text-center btn btn-success rounded-pill mt-1 px-3 py-1 shadow">Check Details</button></a></center>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row page justify-content-center py-3">
+          
+          <div class="row justify-content-evenly text-white mt-3">
+            <div class="col-md-3 rounded-3 px-2 py-3 shadow bg-white text-dark" style="height: fit-content;" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <center><img src="./Images/grand hyatt hotel.jpg" title="Grand Hyatt" class="img-fluid rounded-3" width="350px"></center>
+              <h2 class="mt-2 mb-1 text-center">Grand Hyatt</h2>
+              <center><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201012191348155792&_uCurrency=INR&checkin=07092023&checkout=07102023&city=CTBOM&country=IN&lat=19.07741&lng=72.85118&locusId=CTBOM&locusType=city&rank=7&reference=hotel&roomStayQualifier=1e0e&searchText=Mumbai&type=city&viewType=LUXE&mtkeys=defaultMtkey" target="_blank"><button class="text-center btn btn-success rounded-pill mt-1 px-3 py-1 shadow">Check Details</button></a></center>
+            </div>
+            <div class="col-md-3 rounded-3 px-2 py-3 shadow bg-white text-dark mt-3" style="height: fit-content;" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="./Images/relohomes hotel.jpg" title="RELOHomes" class="img-fluid rounded-3">
+              <h2 class="mt-2 mb-1 text-center">RELOHomes</h2>
+              <center><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202303102005466579&_uCurrency=INR&checkin=07092023&checkout=07102023&city=CTBOM&country=IN&lat=19.11626&lng=72.91277&locusId=CTBOM&locusType=city&rank=4&reference=hotel&roomStayQualifier=1e0e&searchText=Mumbai&sort=reviewRating-desc&type=city&mtkeys=defaultMtkey" target="_blank"><button class="text-center btn btn-success rounded-pill mt-1 px-3 py-1 shadow">Check Details</button></a></center>
+            </div>
+            <div class="col-md-3 rounded-3 px-2 py-3 shadow bg-white text-dark mt-3" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="./Images/prime bandra hotel.jfif" title="Prime Bandra Ocean Park" class="img-fluid rounded-3">
+              <h2 class="mt-2 mb-1 text-center">Prime Bandra Ocean Park</h2>
+              <center><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202101071655392131&_uCurrency=INR&checkin=07092023&checkout=07102023&city=CTBOM&country=IN&lat=19.05956&lng=72.82953&locusId=CTBOM&locusType=city&rank=1&reference=hotel&roomStayQualifier=1e0e&searchText=Mumbai&sort=reviewRating-desc&type=city&mtkeys=defaultMtkey" target="_blank"><button class="text-center btn btn-success rounded-pill mt-1 px-3 py-1 shadow">Check Details</button></a></center>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="row page2 justify-content-center py-3">
+          
+          <div class="row justify-content-evenly">
+            <div class="col-md-3 rounded-3 px-2 py-3 shadow mt-3" style="height: fit-content;" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="./Images/oberoi hotel.jpg" title="The Oberoi" class="img-fluid rounded-3">
+              <h2 class="mt-2 mb-1 text-center">The Oberoi</h2>
+              <center><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200701160930105750&_uCurrency=INR&checkin=07092023&checkout=07102023&city=CTBOM&country=IN&lat=18.9269&lng=72.82057&locusId=CTBOM&locusType=city&rank=6&reference=hotel&roomStayQualifier=1e0e&searchText=Mumbai&sort=reviewRating-desc&type=city&viewType=PREMIUM&mtkeys=defaultMtkey" target="_blank"><button class="text-center btn btn-success rounded-pill mt-1 px-3 py-1 shadow">Check Details</button></a></center>
+            </div>
+            <div class="col-md-3 rounded-3 px-2 py-3 shadow mt-3" style="height: fit-content;" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="./Images/trident hotel.jpg" title="Trident Bandra Kurla" class="img-fluid rounded-3">
+              <h2 class="mt-2 mb-1 text-center">Trident Bandra Kurla</h2>
+              <center><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=20091013074502155&_uCurrency=INR&checkin=07092023&checkout=07102023&city=CTBOM&country=IN&lat=19.06696&lng=72.86782&locusId=CTBOM&locusType=city&rank=12&reference=hotel&roomStayQualifier=1e0e&searchText=Mumbai&sort=reviewRating-desc&type=city&viewType=PREMIUM&mtkeys=defaultMtkey" target="_blank"><button class="text-center btn btn-success rounded-pill mt-1 px-3 py-1 shadow">Check Details</button></a></center>
+            </div>
+            <div class="col-md-3 rounded-3 px-2 py-3 shadow mt-3" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+              <img src="./Images/taj tower hotel.jpeg" title="Taj Mahal Tower" class="img-fluid rounded-3">
+              <h2 class="mt-2 mb-1 text-center">Taj Mahal Tower</h2>
+              <center><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200901081433266594&_uCurrency=INR&checkin=07092023&checkout=07102023&city=CTBOM&country=IN&lat=18.92259&lng=72.83315&locusId=CTBOM&locusType=city&rank=2&reference=hotel&roomStayQualifier=1e0e&searchText=Mumbai&type=city&viewType=LUXE&mtkeys=defaultMtkey" target="_blank"><button class="text-center btn btn-success rounded-pill mt-1 px-3 py-1 shadow">Check Details</button></a></center>
+            </div>
+          </div>
+          
+        </div>
+
+
+        <!-- footer -->
+        <div class="row justify-content-center text-center bcg py-3 bg-dark text-white">
+            <footer class="footer">
+                <div>
+                    Copyright &#169; TraveBai 2023. All Right Reserved.
+                </div>
+                <div>
+                  Made with <i class="bi bi-heart-fill"></i> by Haamid Raza Kazi.
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./load.js"></script>
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+  
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+          } else {
+            nav.classList.remove('bg-dark', 'shadow');
+          }
+        });
+      </script>
+
+      <script type="text/javascript">
+        let mybutton = document.getElementById("myBtn");
+
+          window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      </script>
+  </body>
+</html>

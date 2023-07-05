@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./Images/logo.jpg" class="rounded-circle">
+    <title>TraveBai</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body onload="preLoad()">
+    <div class="row">
+      <div class="col-12">
+          <div id="loading"></div>
+      </div>
+    </div>
+    
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-3">
+        <div class="container-fluid" style="font-size: 20px;">
+            <img src="./Images/logo.jpg" alt="logo" class="img-fluid rounded-circle" width="30">
+          <a class="navbar-brand ms-1" href="#" style="font-size: 25px;">TraveBai</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./places.html">Places</a>
+              </li>
+
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./hotel.html">Hotels</a>
+              </li>
+              
+              <li class="nav-item me-2">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <div class="container-fluid">
+        <!-- hero section  -->
+        <div class="row justify-content-center hero text-center text-white" id="heroo">
+            <span><h1 data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out" style="font-size: 80px; margin-top: 240px;" id="fh">Travel Mumbai with Us</h1>
+            <p data-aos="flip-up" data-aos-duration="2000" data-aos-easing="ease-in-out" style="font-size: 30px;">Explore some Amazing places and more.</p></span>
+        </div>
+        <!-- hero section end  -->
+
+        <div class="page row justify-content-center">
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" class="text-center text-white mt-3">Mumbai</h1>
+
+            <hr class="w-75">
+
+            <!-- up button  -->
+              <a href="#heroo"><span class="text-success" id="myBtn" style="font-size: 50px; position: fixed; bottom: 20px; right: 30px; z-index: 99;"><i class="bi bi-arrow-up-circle-fill"></i></span></a>
+            <!-- up button ends  -->
+
+            <div class="row justify-content-evenly">
+                <div class="col-md-4">
+                    <img src="./Images/mumbai.jpg" alt="mumbai" class="img-fluid" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                </div>
+                <div class="col-md-4">
+                    <p class="text-white mt-4" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924. Offshore, nearby Elephanta Island holds ancient cave temples dedicated to the Hindu god Shiva. The city's also famous as the heart of the Bollywood film industry.</p>
+                </div>
+            </div>
+
+            <div class="page2 justify-content-center p-3 rounded-3 row mt-4">
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" class="text-center mt-2">Places to Visit in Mumbai</h1>
+
+                <hr class="w-75">
+
+              <div class="row justify-content-evenly">
+                <div class="col-md-3">
+                  <img src="./Images/goi.jpg" title="Gateway of India" class="img-fluid rounded-3 mt-3" style="cursor: pointer;" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" id="immg">Gateway of India
+                </div>
+                <div class="col-md-3">
+                  <img src="./Images/md.jpg" title="Marine Drive" class="img-fluid rounded-3 mt-3" style="cursor: pointer;" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out" id="immg">Marine Drive
+                </div>
+                <div class="col-md-3">
+                  <img src="./Images/bwsl.jpg" title="Bandra-Worli Sea Link" class="img-fluid rounded-3 mt-3" style="cursor: pointer;" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out" id="immg">Bandra-Worli Sea Link
+                </div>
+              </div>
+
+              <div class="row justify-content-evenly mt-3">
+                <div class="col-md-3">
+                  <img src="./Images/had.jpg" title="Haji Ali Dargah" width="350" class="img-fluid rounded-3 mt-3" style="cursor: pointer;" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out" id="immg">Haji Ali Dargah
+                </div>
+                <div class="col-md-3">
+                  <img src="./Images/epc.jpg" title="Elephanta Caves" width="350" class="img-fluid rounded-3 mt-3" style="cursor: pointer;" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out" id="immg">Elephanta Caves
+                </div>
+                <div class="col-md-3">
+                  <img src="./Images/twa.jpg" title="Taraporewala Aquarium" width="350" class="img-fluid rounded-3 mt-3" style="cursor: pointer;" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out" id="immg">Taraporewala Aquarium
+                </div>
+              </div>
+
+              <div class="row justify-content-evenly mt-3">
+                <div class="col-md-3">
+                  <img src="./Images/juhu.jpg" title="Juhu Beach" class="img-fluid rounded-3 mt-3" style="cursor: pointer;" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" id="immg">Juhu Beach
+                </div>
+                <div class="col-md-3">
+                  <img src="./Images/hg.jpg" title="Hanging Garden" class="img-fluid rounded-3 mt-3" style="cursor: pointer;" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" id="immg">Hanging Garden
+                </div>
+                <div class="col-md-3">
+                  <img src="./Images/ew.jpg" title="Essel World" class="img-fluid rounded-3 mt-3" style="cursor: pointer;" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" id="immg">Essel World
+                </div>
+              </div>
+
+              <div class="row mt-4 justify-content-center">
+                <div class="text-center">
+                  <a href="./places.html"><button class="bn rounded-pill py-2 px-3">Explore More Places</button></a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+       
+
+
+        <!-- footer -->
+        <div class="row justify-content-center text-center bcg py-3 bg-dark text-white">
+            <footer class="footer">
+                <div>
+                    Copyright &#169; TraveBai 2023. All Right Reserved.
+                </div>
+                <div>
+                  Made with <i class="bi bi-heart-fill"></i> by Haamid Raza Kazi.
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./load.js"></script>
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+  
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+          } else {
+            nav.classList.remove('bg-dark', 'shadow');
+          }
+        });
+      </script>
+
+    <script type="text/javascript">
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+          mybutton.style.display = "block";
+        } else {
+         mybutton.style.display = "none";
+        }
+      }
+    </script>
+
+    
+  </body>
+</html>
